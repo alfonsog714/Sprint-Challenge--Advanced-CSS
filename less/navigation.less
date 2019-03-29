@@ -2,6 +2,8 @@
 .nav-bg {
   background: @nav-bg;
   border: @nav-border 1px solid;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .navigation {
@@ -18,6 +20,7 @@
   .nav-items {
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     margin-top: 30px;
 
@@ -33,8 +36,20 @@
       }
     }
   }
+
+  @media @phone {
+    .nav-bg {
+      max-width: 450px;
+    }
+
+    .navigation {
+      padding: 0;
+    }
+  } // media query
 } // .navigation
 
 .header-img img {
   .radius();
+  display: flex;
+  width: 100%;
 }

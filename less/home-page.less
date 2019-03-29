@@ -71,4 +71,59 @@
       }
     }
   }
+
+  @media @phone {
+    .home {
+      margin: 0;
+    }
+    .space-images {
+      .blast {
+        width: 100%;
+      }
+
+      .sky,
+      .launch {
+        display: none;
+      }
+    }
+
+    .walk {
+      margin-top: 30px;
+      border-top: 1px solid @main-border-color;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      flex-direction: column-reverse;
+
+      .walk-text {
+        width: 100%;
+
+        h3 {
+          margin-bottom: 10px;
+        }
+
+        p {
+          margin-bottom: 26px;
+        }
+
+        .btn {
+          // .new-btn(#2463a3, #c3c6c9, 15px);
+          .new-btn();
+          padding: 20px 0;
+          border-radius: 4px;
+        }
+      }
+
+      .walk-img {
+        width: 100%;
+        margin: 0 auto;
+        padding: 20px 2.5%;
+
+        img {
+          width: 100%;
+          border-radius: 20px;
+        }
+      }
+    }
+  } // phone media query
 } // home
