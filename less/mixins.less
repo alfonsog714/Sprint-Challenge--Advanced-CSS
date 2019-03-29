@@ -9,3 +9,20 @@
 .radius() {
   border-radius: 10px;
 }
+
+// Button
+.new-btn(@bg:@button-color, @font-color:@button-font-color, @radius: 10px ) {
+  background: @bg;
+  color: @font-color;
+  border-radius: @radius;
+  padding: 10px 2rem;
+  font-size: 2rem;
+  display: inline-block;
+  text-align: center;
+
+  &:hover {
+    background: @font-color;
+    color: @bg;
+    cursor: pointer;
+  }
+}
