@@ -1,1 +1,35 @@
 // Navigation code here
+.nav-bg {
+  background: @nav-bg;
+  border: @nav-border 1px solid;
+}
+
+.navigation {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 15px;
+
+  h1 {
+    font-size: 5rem;
+    text-align: center;
+  }
+
+  .nav-items {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+
+    a {
+      font-size: 2rem;
+      text-decoration: none;
+      color: @nav-font;
+      margin: 0 1rem;
+    }
+  }
+} // .navigation
+
+.header-img img {
+  .radius();
+}
