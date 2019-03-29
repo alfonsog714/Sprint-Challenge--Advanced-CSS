@@ -186,6 +186,10 @@ p {
   color: #454a59;
   margin: 0 1rem;
 }
+.navigation .nav-items a:hover {
+  color: #777777;
+  font-size: 2.4rem;
+}
 .header-img img {
   border-radius: 10px;
 }
