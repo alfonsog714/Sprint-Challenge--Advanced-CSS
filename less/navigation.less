@@ -1,1 +1,55 @@
 // Navigation code here
+.nav-bg {
+  background: @nav-bg;
+  border: @nav-border 1px solid;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.navigation {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 15px;
+
+  h1 {
+    font-size: 5rem;
+    text-align: center;
+  }
+
+  .nav-items {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+
+    a {
+      font-size: 2rem;
+      text-decoration: none;
+      color: @nav-font;
+      margin: 0 1rem;
+
+      &:hover {
+        color: darken(@nav-bg, 50%);
+        font-size: 2.4rem;
+      }
+    }
+  }
+
+  @media @phone {
+    .nav-bg {
+      max-width: 450px;
+    }
+
+    .navigation {
+      padding: 0;
+    }
+  } // media query
+} // .navigation
+
+.header-img img {
+  .radius();
+  display: flex;
+  width: 100%;
+}
